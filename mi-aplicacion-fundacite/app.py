@@ -2,6 +2,7 @@ import os
 import secrets
 from flask import Flask, request, jsonify, session, render_template, send_file
 from flask_cors import CORS
+from flask_login import UserMixin, LoginManager, login_required, current_user
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from werkzeug.security import generate_password_hash, check_password_hash
